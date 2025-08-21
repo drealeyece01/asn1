@@ -1,0 +1,188 @@
+<!--
+**
+Author: Desmond Thompson
+Date:   August 03, 2025
+ID:     R2409D18577488
+Course: LJMU-7505-COMP
+Code:   7505
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - DesiWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+             <div class="nav-left">
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Men</a>
+                <a href="shop.html" class="nav-link">Women</a>
+                <a href="shop.html" class="nav-link">Kids</a>
+                <a href="shop.html" class="nav-link">Wedding Collection</a>
+                <a href="orders.html" class="nav-link">My Orders</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    <span class="cart-count">3</span>
+                    🛒
+                </div>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart-container">
+        <div class="cart-items">
+            <div class="cart-header">
+                <h1>Your cart</h1>
+                <a href="shop.html" class="continue-shopping">Not ready to checkout? Continue Shopping</a>
+            </div>
+
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=100&h=120&fit=crop" alt="Riley High-Waist Leggings" class="item-image">
+                <div class="item-details">
+                    <div class="item-name">Riley High-Waist Leggings</div>
+                    <div class="item-info">Size: L</div>
+                    <div class="item-info">Quantity: 1</div>
+                    <div class="item-price">$99</div>
+                </div>
+                <div class="item-actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+                        <input type="number" value="1" class="quantity-input" readonly>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                    <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=100&h=120&fit=crop" alt="Brooks Utility Jacket" class="item-image">
+                <div class="item-details">
+                    <div class="item-name">Brooks Utility Jacket</div>
+                    <div class="item-info">Size: S</div>
+                    <div class="item-info">Quantity: 1</div>
+                    <div class="item-price">$89</div>
+                </div>
+                <div class="item-actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">−</button>
+                        <input type="number" value="1" class="quantity-input" readonly>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                    <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            
+            <div class="coupon-section">
+                <input type="text" placeholder="Enter coupon code here" class="coupon-input">
+            </div>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$188</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>Calculated at the next step</span>
+            </div>
+            <div class="summary-total">
+                <span>Total</span>
+                <span>$188</span>
+            </div>
+
+            <button class="checkout-btn" onclick="window.location.href='checkout.html'">Continue to checkout</button>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 20px;">
+        <div class="order-info">
+            <h3>Order Information</h3>
+            
+            <div class="info-section">
+                <h4>Return Policy <span>−</span></h4>
+                <p>This is our example return policy which is everything you need to know about our returns.</p>
+            </div>
+            
+            <div class="info-section">
+                <h4>Shipping Options <span>+</span></h4>
+            </div>
+            
+            <div class="info-section">
+                <h4>Shipping Options <span>+</span></h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="newsletter">
+                <h3><i class="fas fa-envelope-open-text"></i> Sign up for our newsletter</h3>
+                <p>Be the first to know about our special offers, news, and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button><i class="fas fa-paper-plane"></i> Sign Up</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><i class="fas fa-store"></i> About DesiWear</h4>
+                    <ul>
+                        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Info</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Store Location</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-headset"></i> Customer Service</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-ruler"></i> Size Guide</a></li>
+                        <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-users"></i> Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DESIWEAR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

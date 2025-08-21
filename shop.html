@@ -1,0 +1,239 @@
+<!--
+**
+Author: Desmond Thompson
+Date:   August 03, 2025
+ID:     R2409D18577488
+Course: LJMU-7505-COMP
+Code:   7505
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - DesiWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+       <header class="header">
+        <nav class="navbar">
+             <div class="nav-left">
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Men</a>
+                <a href="shop.html" class="nav-link">Women</a>
+                <a href="shop.html" class="nav-link">Kids</a>
+                <a href="shop.html" class="nav-link">Wedding Collection</a>
+                <a href="orders.html" class="nav-link">My Orders</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    <span class="cart-count">3</span>
+                    🛒
+                </div>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Shop Content -->
+    <main class="shop-main">
+        <div class="container">
+            <div class="shop-header">
+                <h1>Shop</h1>
+                <p>Browse our latest arrivals in traditional American fashion, designed with elegance, comfort, and culture in mind. Find your perfect outfit for every occasion.</p>
+            </div>
+
+            <div class="shop-content">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <div class="filters-header">
+                        <h3>Filters</h3>
+                        <button class="clear-filters">Clear filters</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Categories</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="men">
+                                <span class="checkmark"></span>
+                                Men
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="women">
+                                <span class="checkmark"></span>
+                                Women
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="kids">
+                                <span class="checkmark"></span>
+                                Kids
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="wedding">
+                                <span class="checkmark"></span>
+                                Wedding Collection
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Color</h4>
+                        <div class="color-filters">
+                            <div class="color-option red" data-color="red"></div>
+                            <div class="color-option green" data-color="green"></div>
+                            <div class="color-option blue" data-color="blue"></div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-section">
+                    <div class="products-header">
+                        <div class="sort-controls">
+                            <label for="sort">Sort By</label>
+                            <select id="sort" name="sort">
+                                <option value="popular">Popular</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest</option>
+                            </select>
+                        </div>
+                        <div class="results-count">
+                            <span>Showing 1003 Products</span>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="images/dress.jpg" alt="Harper Midi Wrap Dress">
+                                <div class="product-info">
+                                    <h3>Harper Midi Wrap Dress</h3>
+                                    <p class="price">$99</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=300&h=400&fit=crop" alt="Logan Straight-Leg Jeans">
+                                <div class="product-info">
+                                    <h3>Logan Straight-Leg Jeans</h3>
+                                    <p class="price">$99</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=300&h=400&fit=crop" alt="Avery Oversized Blazer">
+                                <div class="product-info">
+                                    <h3>Avery Oversized Blazer</h3>
+                                    <p class="price">$99</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop" alt="Camden Cotton Crew Tee">
+                                <div class="product-info">
+                                    <h3>Camden Cotton Crew Tee</h3>
+                                    <p class="price">$99</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=300&h=400&fit=crop" alt="Brooks Utility Jacket">
+                                <div class="product-info">
+                                    <h3>Brooks Utility Jacket</h3>
+                                    <p class="price">$99</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=100&h=120&fit=crop" alt="Riley High-Waist Leggings">
+                                <div class="product-info">
+                                    <h3>Riley High-Waist Leggings</h3>
+                                    <p class="price">$99</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="load-more">
+                        <button class="load-more-btn">Load more products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+ <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="newsletter">
+                <h3><i class="fas fa-envelope-open-text"></i> Sign up for our newsletter</h3>
+                <p>Be the first to know about our special offers, news, and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button><i class="fas fa-paper-plane"></i> Sign Up</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><i class="fas fa-store"></i> About DesiWear</h4>
+                    <ul>
+                        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Info</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Store Location</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-headset"></i> Customer Service</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-ruler"></i> Size Guide</a></li>
+                        <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-users"></i> Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DESIWEAR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

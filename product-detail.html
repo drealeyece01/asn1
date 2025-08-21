@@ -1,0 +1,241 @@
+<!--
+**
+Author: Desmond Thompson
+Date:   August 03, 2025
+ID:     R2409D18577488
+Course: LJMU-7505-COMP
+Code:   7505
+*/ --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riley High-Waist Leggings - DesiWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+     <header class="header">
+        <nav class="navbar">
+             <div class="nav-left">
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Men</a>
+                <a href="shop.html" class="nav-link">Women</a>
+                <a href="shop.html" class="nav-link">Kids</a>
+                <a href="shop.html" class="nav-link">Wedding Collection</a>
+                <a href="orders.html" class="nav-link">My Orders</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    <span class="cart-count">3</span>
+                    🛒
+                </div>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Detail Content -->
+    <main class="product-main">
+        <div class="container">
+            <div class="product-content">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="image-gallery">
+                        <div class="main-image">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=100&h=120&fit=crop" alt="Riley High-Waist Leggings" id="mainImage">
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="images/Leggings (1).jpg" alt="View 1" class="thumbnail active" onclick="changeImage(this)">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=150&h=180&fit=crop" alt="View 2" class="thumbnail" onclick="changeImage(this)">
+                            <img src="images/Leggings (2).jpg" alt="View 3" class="thumbnail" onclick="changeImage(this)">
+                            <img src="images/Leggings (3).jpg" alt="View 4" class="thumbnail" onclick="changeImage(this)">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <h1>Riley High-Waist Leggings</h1>
+                        <div class="wishlist-btn">♡</div>
+                    </div>
+                    
+                    <div class="price">
+                        <span class="current-price">$5,950</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Seamless performance leggings with moisture-wicking fabric, ideal for the gym or errands.</p>
+                    </div>
+
+                    <div class="product-options">
+                        <div class="size-selection">
+                            <label>Size</label>
+                            <div class="size-options">
+                                <button class="size-btn" data-size="S">S</button>
+                                <button class="size-btn active" data-size="M">M</button>
+                                <button class="size-btn" data-size="L">L</button>
+                            </div>
+                        </div>
+
+                        <div class="color-selection">
+                            <label>Color</label>
+                            <div class="color-options">
+                                <div class="color-btn red active" data-color="red"></div>
+                                <div class="color-btn green" data-color="green"></div>
+                                <div class="color-btn blue" data-color="blue"></div>
+                            </div>
+                        </div>
+
+                        <div class="quantity-selection">
+                            <label>Quantity</label>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus" onclick="changeQuantity(-1)">-</button>
+                                <input type="number" value="1" min="1" id="quantity" readonly>
+                                <button class="qty-btn plus" onclick="changeQuantity(1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart - $188</button>
+                    </div>
+
+                    <div class="product-features">
+                        <div class="feature">
+                            <span class="feature-text">Free standard shipping</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-text">Free Returns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+     <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="newsletter">
+                <h3><i class="fas fa-envelope-open-text"></i> Sign up for our newsletter</h3>
+                <p>Be the first to know about our special offers, news, and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button><i class="fas fa-paper-plane"></i> Sign Up</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><i class="fas fa-store"></i> About DesiWear</h4>
+                    <ul>
+                        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Info</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Store Location</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-headset"></i> Customer Service</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-ruler"></i> Size Guide</a></li>
+                        <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-users"></i> Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DESIWEAR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+    <script>
+        function changeImage(thumbnail) {
+            const mainImage = document.getElementById('mainImage');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            
+            // Remove active class from all thumbnails
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            
+            // Add active class to clicked thumbnail
+            thumbnail.classList.add('active');
+            
+            // Change main image source
+            mainImage.src = thumbnail.src.replace('w=150&h=180', 'w=500&h=600');
+        }
+
+        function changeQuantity(change) {
+            const quantityInput = document.getElementById('quantity');
+            let currentValue = parseInt(quantityInput.value);
+            let newValue = currentValue + change;
+            
+            if (newValue >= 1) {
+                quantityInput.value = newValue;
+                updatePrice();
+            }
+        }
+
+        function updatePrice() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            const basePrice = 188;
+            const totalPrice = basePrice * quantity;
+            const addToCartBtn = document.querySelector('.add-to-cart-btn');
+            addToCartBtn.textContent = `Add to Cart - $${totalPrice}`;
+        }
+
+        function addToCart() {
+            const size = document.querySelector('.size-btn.active').dataset.size;
+            const color = document.querySelector('.color-btn.active').dataset.color;
+            const quantity = document.getElementById('quantity').value;
+            
+            alert(`Added to cart: ${quantity}x Riley High-Waist Leggings (Size: ${size}, Color: ${color})`);
+            
+            // Update cart count
+            const cartCount = document.querySelector('.cart-count');
+            cartCount.textContent = parseInt(cartCount.textContent) + parseInt(quantity);
+        }
+
+        // Size selection
+        document.querySelectorAll('.size-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Color selection
+        document.querySelectorAll('.color-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

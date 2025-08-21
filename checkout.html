@@ -1,0 +1,215 @@
+<!--
+**
+Author: Desmond Thompson
+Date:   August 03, 2025
+ID:     R2409D18577488
+Course: LJMU-7505-COMP
+Code:   7505
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - DesiWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+  <header class="header">
+        <nav class="navbar">
+             <div class="nav-left">
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Men</a>
+                <a href="shop.html" class="nav-link">Women</a>
+                <a href="shop.html" class="nav-link">Kids</a>
+                <a href="shop.html" class="nav-link">Wedding Collection</a>
+                <a href="orders.html" class="nav-link">My Orders</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    <span class="cart-count">3</span>
+                    🛒
+                </div>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="checkout-container">
+        <div class="checkout-form">
+            <h1>Checkout</h1>
+            
+            <div class="checkout-steps">
+                <div class="step completed">Address</div>
+                <div class="step completed">Shipping</div>
+                <div class="step active">Payment</div>
+            </div>
+
+            <div class="payment-options">
+                <div class="payment-option">
+                    <strong>💳 PayPal</strong>
+                </div>
+                <div class="payment-option active">
+                    <strong>💳 Credit Card</strong>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-section">
+                    <h3>Payment Details</h3>
+                    
+                    <div class="form-group">
+                        <input type="text" placeholder="Cardholder Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" placeholder="Card Number" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <select required>
+                            <option value="">Month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select required>
+                            <option value="">Year</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                        </select>
+                        <input type="text" placeholder="CVC" maxlength="3" required>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="save-card">
+                    <label for="save-card">Save card data for future payments</label>
+                </div>
+
+                <button type="submit" class="pay-button">Pay with card</button>
+            </form>
+        </div>
+
+        <div class="order-summary">
+            <h2>Your cart</h2>
+            
+            <div class="cart-item-summary">
+                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=60&h=70&fit=crop" alt="Riley High-Waist Leggings" class="item-image-small">
+                <div class="item-summary-details">
+                    <div class="item-summary-name">Riley High-Waist Leggings</div>
+                    <div class="item-summary-info">Size: L</div>
+                    <div class="item-summary-info">Quantity: 1</div>
+                    <div class="item-summary-price">$99</div>
+                </div>
+                <a href="#" class="remove-link">Remove</a>
+            </div>
+
+            <div class="cart-item-summary">
+                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=60&h=70&fit=crop" alt="Brooks Utility Jacket" class="item-image-small">
+                <div class="item-summary-details">
+                    <div class="item-summary-name">Brooks Utility Jacket</div>
+                    <div class="item-summary-info">Size: S</div>
+                    <div class="item-summary-info">Quantity: 1</div>
+                    <div class="item-summary-price">$89</div>
+                </div>
+                <a href="#" class="remove-link">Remove</a>
+            </div>
+
+            <div class="summary-totals">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$188</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>$15</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <span>$18.80</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>$221.80</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="newsletter">
+                <h3><i class="fas fa-envelope-open-text"></i> Sign up for our newsletter</h3>
+                <p>Be the first to know about our special offers, news, and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button><i class="fas fa-paper-plane"></i> Sign Up</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><i class="fas fa-store"></i> About DesiWear</h4>
+                    <ul>
+                        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Info</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Store Location</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-headset"></i> Customer Service</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-ruler"></i> Size Guide</a></li>
+                        <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-users"></i> Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DESIWEAR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

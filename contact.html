@@ -1,0 +1,283 @@
+<!--
+**
+Author: Desmond Thompson
+Date:   August 03, 2025
+ID:     R2409D18577488
+Course: LJMU-7505-COMP
+Code:   7505
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DesiWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+             <div class="nav-left">
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Men</a>
+                <a href="shop.html" class="nav-link">Women</a>
+                <a href="shop.html" class="nav-link">Kids</a>
+                <a href="shop.html" class="nav-link">Wedding Collection</a>
+                <a href="orders.html" class="nav-link">My Orders</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    <span class="cart-count">3</span>
+                    🛒
+                </div>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with our friendly team and we'll get back to you as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <p>Have a question or need assistance? Fill out the form below and we'll respond within 24 hours.</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Please select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Support</option>
+                                <option value="returns">Returns & Exchanges</option>
+                                <option value="wholesale">Wholesale</option>
+                                <option value="press">Press & Media</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <span class="info-icon">📍</span>
+                            <h3>Visit Our Store</h3>
+                        </div>
+                        <p>123 Fashion Avenue<br>
+                        New York, NY 10001<br>
+                        United States</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <span class="info-icon">📞</span>
+                            <h3>Call Us</h3>
+                        </div>
+                        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-8900</a><br>
+                        Toll Free: <a href="tel:+1800555123">+1 (800) 555-0123</a><br>
+                        Mon-Fri: 9:00 AM - 6:00 PM EST</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <span class="info-icon">✉️</span>
+                            <h3>Email Us</h3>
+                        </div>
+                        <p>General: <a href="mailto:info@desiwear.com">info@desiwear.com</a><br>
+                        Support: <a href="mailto:support@desiwear.com">support@desiwear.com</a><br>
+                        Press: <a href="mailto:press@desiwear.com">press@desiwear.com</a></p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <span class="info-icon">🕒</span>
+                            <h3>Store Hours</h3>
+                        </div>
+                        <p>Monday - Friday: 10:00 AM - 8:00 PM<br>
+                        Saturday: 10:00 AM - 9:00 PM<br>
+                        Sunday: 12:00 PM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <div class="map-header">
+                    <h2>Find Us</h2>
+                    <p>Located in the heart of New York's fashion district</p>
+                </div>
+                <div class="map-placeholder">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48334.682341222244!2d-74.01122502854693!3d40.7858246236604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259afcda5009d%3A0x842a3dae11cd7e43!2sNew%20York%2C%20NY%2010001%2C%20USA!5e0!3m2!1sen!2ske!4v1754024181983!5m2!1sen!2ske"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-container">
+                <div class="faq-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions about DesiWear</p>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are your shipping options and delivery times?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer standard shipping (5-7 business days), expedited shipping (2-3 business days), and overnight delivery. Free shipping is available on orders over $75 within the continental US.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is your return and exchange policy?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept returns within 30 days of purchase. Items must be unworn, unwashed, and in original condition with tags attached. Returns are free for exchanges, with a $5 fee for refunds.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I determine my size?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Each product page includes a detailed size chart. We recommend measuring yourself and comparing to our size guide. If you're between sizes, we generally recommend sizing up for comfort.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer international shipping?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we ship internationally to most countries. International shipping costs vary by destination and are calculated at checkout. Delivery times range from 7-21 business days depending on location.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How can I track my order?</span>
+                        <span class="faq-arrow">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Once your order ships, you'll receive a tracking number via email. You can also track your order by logging into your account and visiting the "My Orders" section.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="newsletter">
+                <h3><i class="fas fa-envelope-open-text"></i> Sign up for our newsletter</h3>
+                <p>Be the first to know about our special offers, news, and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button><i class="fas fa-paper-plane"></i> Sign Up</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><i class="fas fa-store"></i> About DesiWear</h4>
+                    <ul>
+                        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Info</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Store Location</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-headset"></i> Customer Service</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-ruler"></i> Size Guide</a></li>
+                        <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-users"></i> Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DESIWEAR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

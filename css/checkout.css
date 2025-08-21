@@ -1,0 +1,254 @@
+/**
+Author: Desmond Thompson
+Date:   August 03, 2025
+ID:     R2409D18577488
+Course: LJMU-7505-COMP
+Code:   7505
+*/
+.checkout-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 20px;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	gap: 3rem;
+}
+
+.checkout-form {
+	background: white;
+	border-radius: 10px;
+	padding: 2rem;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.checkout-form h1 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: #333;
+}
+
+.checkout-steps {
+	display: flex;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.step {
+	flex: 1;
+	text-align: center;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid #e0e0e0;
+	color: #999;
+	font-weight: 500;
+	position: relative;
+}
+
+.step.active {
+	border-bottom-color: #333;
+	color: #333;
+}
+
+.step.completed {
+	border-bottom-color: #28a745;
+	color: #28a745;
+}
+
+.payment-options {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.payment-option {
+	flex: 1;
+	padding: 1rem;
+	border: 2px solid #e0e0e0;
+	border-radius: 8px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	background: white;
+}
+
+.payment-option.active {
+	border-color: #333;
+	background: #f8f9fa;
+}
+
+.payment-option:hover {
+	border-color: #333;
+}
+
+.form-section {
+	margin-bottom: 2rem;
+}
+
+.form-section h3 {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	color: #333;
+}
+
+.form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.form-group {
+	margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group select {
+	width: 100%;
+	padding: 0.8rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	outline: none;
+	font-size: 0.9rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+	border-color: #007bff;
+}
+
+.checkbox-group {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 1rem 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+	width: auto;
+}
+
+.pay-button {
+	width: 100%;
+	background: #333;
+	color: white;
+	border: none;
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+	background: #555;
+}
+
+.order-summary {
+	background: white;
+	border-radius: 10px;
+	padding: 2rem;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	height: fit-content;
+}
+
+.order-summary h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	color: #333;
+}
+
+.cart-item-summary {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.cart-item-summary:last-child {
+	border-bottom: none;
+}
+
+.item-image-small {
+	width: 60px;
+	height: 70px;
+	object-fit: cover;
+	border-radius: 5px;
+	margin-right: 1rem;
+}
+
+.item-summary-details {
+	flex: 1;
+}
+
+.item-summary-name {
+	font-weight: 500;
+	color: #333;
+	margin-bottom: 0.2rem;
+}
+
+.item-summary-info {
+	font-size: 0.8rem;
+	color: #666;
+	margin-bottom: 0.2rem;
+}
+
+.item-summary-price {
+	font-weight: 600;
+	color: #333;
+}
+
+.remove-link {
+	color: #dc3545;
+	font-size: 0.8rem;
+	text-decoration: none;
+	margin-left: 1rem;
+}
+
+.remove-link:hover {
+	text-decoration: underline;
+}
+
+.summary-totals {
+	margin-top: 1.5rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid #f0f0f0;
+}
+
+.summary-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+	color: #666;
+}
+
+.summary-total {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #333;
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+	.checkout-container {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		padding: 1rem;
+	}
+
+	.form-row {
+		grid-template-columns: 1fr;
+	}
+
+	.payment-options {
+		flex-direction: column;
+	}
+
+	.checkout-steps {
+		font-size: 0.9rem;
+	}
+}

@@ -1,0 +1,229 @@
+<!--
+**
+Author: Desmond Thompson
+Date:   August 03, 2025
+ID:     R2409D18577488
+Course: LJMU-7505-COMP
+Code:   7505
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - DesiWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orders.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+             <div class="nav-left">
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Men</a>
+                <a href="shop.html" class="nav-link">Women</a>
+                <a href="shop.html" class="nav-link">Kids</a>
+                <a href="shop.html" class="nav-link">Wedding Collection</a>
+                <a href="orders.html" class="nav-link">My Orders</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    <span class="cart-count">3</span>
+                    🛒
+                </div>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="orders-container">
+        <div class="orders-header">
+            <h1>My Orders</h1>
+            <div class="filter-dropdown">
+                <select class="filter-select">
+                    <option value="7">Last 7 Days</option>
+                    <option value="30">Last 30 Days</option>
+                    <option value="90">Last 3 Months</option>
+                    <option value="365">Last Year</option>
+                    <option value="all">All Orders</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="orders-table">
+            <div class="table-header">
+                <div>ORDER NO.</div>
+                <div>CUSTOMER NAME</div>
+                <div>PAYMENT STATUS</div>
+                <div>AMOUNT</div>
+                <div>ADDRESS</div>
+                <div>ORDER DATE</div>
+                <div>STATUS</div>
+            </div>
+
+            <div class="table-row">
+                <div class="order-number" data-label="Order No.">300</div>
+                <div class="customer-name" data-label="Customer Name">John Smith</div>
+                <div data-label="Payment Status">
+                    <span class="payment-status paid">Paid</span>
+                </div>
+                <div class="amount" data-label="Amount">$400</div>
+                <div class="address" data-label="Address">Los Angeles, CA</div>
+                <div class="order-date" data-label="Order Date">9-Jan-2022</div>
+                <div data-label="Status">
+                    <span class="status confirmed">Confirmed</span>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="order-number" data-label="Order No.">301</div>
+                <div class="customer-name" data-label="Customer Name">Sarah Johnson</div>
+                <div data-label="Payment Status">
+                    <span class="payment-status paid">Paid</span>
+                </div>
+                <div class="amount" data-label="Amount">$250</div>
+                <div class="address" data-label="Address">New York, NY</div>
+                <div class="order-date" data-label="Order Date">8-Jan-2022</div>
+                <div data-label="Status">
+                    <span class="status shipped">Shipped</span>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="order-number" data-label="Order No.">302</div>
+                <div class="customer-name" data-label="Customer Name">Mike Davis</div>
+                <div data-label="Payment Status">
+                    <span class="payment-status paid">Paid</span>
+                </div>
+                <div class="amount" data-label="Amount">$180</div>
+                <div class="address" data-label="Address">Chicago, IL</div>
+                <div class="order-date" data-label="Order Date">7-Jan-2022</div>
+                <div data-label="Status">
+                    <span class="status processing">Processing</span>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="order-number" data-label="Order No.">303</div>
+                <div class="customer-name" data-label="Customer Name">Emily Wilson</div>
+                <div data-label="Payment Status">
+                    <span class="payment-status paid">Paid</span>
+                </div>
+                <div class="amount" data-label="Amount">$320</div>
+                <div class="address" data-label="Address">Miami, FL</div>
+                <div class="order-date" data-label="Order Date">6-Jan-2022</div>
+                <div data-label="Status">
+                    <span class="status confirmed">Confirmed</span>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="order-number" data-label="Order No.">304</div>
+                <div class="customer-name" data-label="Customer Name">David Brown</div>
+                <div data-label="Payment Status">
+                    <span class="payment-status pending">Pending</span>
+                </div>
+                <div class="amount" data-label="Amount">$150</div>
+                <div class="address" data-label="Address">Seattle, WA</div>
+                <div class="order-date" data-label="Order Date">5-Jan-2022</div>
+                <div data-label="Status">
+                    <span class="status cancelled">Cancelled</span>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="order-number" data-label="Order No.">305</div>
+                <div class="customer-name" data-label="Customer Name">Lisa Garcia</div>
+                <div data-label="Payment Status">
+                    <span class="payment-status paid">Paid</span>
+                </div>
+                <div class="amount" data-label="Amount">$290</div>
+                <div class="address" data-label="Address">Houston, TX</div>
+                <div class="order-date" data-label="Order Date">4-Jan-2022</div>
+                <div data-label="Status">
+                    <span class="status shipped">Shipped</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="newsletter">
+                <h3><i class="fas fa-envelope-open-text"></i> Sign up for our newsletter</h3>
+                <p>Be the first to know about our special offers, news, and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button><i class="fas fa-paper-plane"></i> Sign Up</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><i class="fas fa-store"></i> About DesiWear</h4>
+                    <ul>
+                        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Info</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Store Location</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-headset"></i> Customer Service</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-ruler"></i> Size Guide</a></li>
+                        <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-users"></i> Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DESIWEAR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Filter functionality
+        document.querySelector('.filter-select').addEventListener('change', function() {
+            const filterValue = this.value;
+            console.log('Filtering orders for:', filterValue);
+            // In a real application, this would filter the orders based on the selected timeframe
+        });
+
+        // Add click handlers for order rows
+        document.querySelectorAll('.table-row').forEach(row => {
+            row.addEventListener('click', function() {
+                const orderNumber = this.querySelector('.order-number').textContent;
+                console.log('Clicked on order:', orderNumber);
+                // In a real application, this would show order details or navigate to order detail page
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

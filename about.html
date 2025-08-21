@@ -1,0 +1,241 @@
+<!--
+**
+Author: Desmond Thompson
+Date:   August 03, 2025
+ID:     R2409D18577488
+Course: LJMU-7505-COMP
+Code:   7505
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DesiWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <!-- Header -->
+     <header class="header">
+        <nav class="navbar">
+             <div class="nav-left">
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Men</a>
+                <a href="shop.html" class="nav-link">Women</a>
+                <a href="shop.html" class="nav-link">Kids</a>
+                <a href="shop.html" class="nav-link">Wedding Collection</a>
+                <a href="orders.html" class="nav-link">My Orders</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    <span class="cart-count">3</span>
+                    🛒
+                </div>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About DesiWear</h1>
+            <p>Bringing timeless American fashion to your wardrobe with a perfect blend of tradition, quality, and contemporary style</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2018, DesiWear began as a vision to bridge the gap between traditional craftsmanship and modern American fashion. What started as a small boutique has grown into a beloved brand that celebrates the rich heritage of design while embracing contemporary trends.</p>
+                    <p>Our journey started with a simple belief: fashion should tell a story, reflect personality, and make everyone feel confident and beautiful. Today, we continue to honor this philosophy by creating pieces that are not just clothing, but expressions of art and culture.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=500&h=400&fit=crop" alt="Fashion Design Studio">
+                </div>
+            </div>
+
+            <div class="about-grid reverse">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500&h=400&fit=crop" alt="Quality Craftsmanship">
+                </div>
+                <div class="about-text">
+                    <h2>Our Commitment</h2>
+                    <p>At DesiWear, we're committed to excellence in every thread. Our team of skilled artisans and designers work tirelessly to ensure that each piece meets our high standards of quality, comfort, and style.</p>
+                    <p>We believe in sustainable fashion practices and ethical manufacturing. Every garment is created with respect for both our craftspeople and the environment, ensuring that our beautiful clothes don't come at the cost of our planet's future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="about-section">
+                <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 1rem;">Our Values</h2>
+                <p style="text-align: center; font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">The principles that guide everything we do</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">✨</div>
+                    <h3>Quality Excellence</h3>
+                    <p>We never compromise on quality. Every piece is carefully crafted using premium materials and time-tested techniques to ensure durability and comfort.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌱</div>
+                    <h3>Sustainability</h3>
+                    <p>Fashion that cares for tomorrow. We're committed to sustainable practices, ethical sourcing, and reducing our environmental footprint.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">❤️</div>
+                    <h3>Customer First</h3>
+                    <p>Your satisfaction is our priority. We listen, adapt, and continuously improve to exceed your expectations in every interaction.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🎨</div>
+                    <h3>Creative Innovation</h3>
+                    <p>Blending traditional aesthetics with contemporary design, we create unique pieces that stand out in today's fashion landscape.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="about-section">
+                <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 1rem;">Meet Our Team</h2>
+                <p style="text-align: center; font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">The passionate people behind DesiWear</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" alt="Sarah Johnson" class="member-photo">
+                    <div class="member-name">Johnson Smith</div>
+                    <div class="member-role">Founder & Creative Director</div>
+                    <p class="member-bio">With over 15 years in fashion design, Johnson brings his vision of timeless elegance to every DesiWear collection.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=face" alt="Michael Chen" class="member-photo">
+                    <div class="member-name">Michael Chen</div>
+                    <div class="member-role">Head of Operations</div>
+                    <p class="member-bio">Michael ensures our operations run smoothly while maintaining our commitment to quality and customer satisfaction.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.pexels.com/photos/4909509/pexels-photo-4909509.jpeg" alt="Emily Rodriguez" class="member-photo">
+                    <div class="member-name">Emily Rodriguez</div>
+                    <div class="member-role">Lead Designer</div>
+                    <p class="member-bio">Emily's innovative designs and attention to detail help create the unique aesthetic that defines DesiWear.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=120&h=120&fit=crop&crop=face" alt="David Kim" class="member-photo">
+                    <div class="member-name">David Kim</div>
+                    <div class="member-role">Customer Experience Manager</div>
+                    <p class="member-bio">David leads our customer service team, ensuring every customer has an exceptional experience with DesiWear.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Our Impact</h2>
+            <p style="font-size: 1.1rem; opacity: 0.9;">Numbers that reflect our journey and success</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>50K+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Unique Designs</p>
+                </div>
+                <div class="stat-item">
+                    <h3>7</h3>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Customer Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Experience DesiWear?</h2>
+            <p>Discover our latest collection and find your perfect style</p>
+            <a href="index.html" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="newsletter">
+                <h3><i class="fas fa-envelope-open-text"></i> Sign up for our newsletter</h3>
+                <p>Be the first to know about our special offers, news, and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button><i class="fas fa-paper-plane"></i> Sign Up</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><i class="fas fa-store"></i> About DesiWear</h4>
+                    <ul>
+                        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Info</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Store Location</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-headset"></i> Customer Service</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-ruler"></i> Size Guide</a></li>
+                        <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-users"></i> Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DESIWEAR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

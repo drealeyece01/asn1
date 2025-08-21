@@ -1,0 +1,271 @@
+/**
+Author: Desmond Thompson
+Date:   August 03, 2025
+ID:     R2409D18577488
+Course: LJMU-7505-COMP
+Code:   7505
+*/
+.cart-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 20px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 3rem;
+}
+
+.cart-items {
+	background: white;
+	border-radius: 10px;
+	padding: 2rem;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.cart-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #eee;
+}
+
+.cart-header h1 {
+	font-size: 2rem;
+	color: #333;
+	margin: 0;
+}
+
+.continue-shopping {
+	color: #007bff;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.continue-shopping:hover {
+	text-decoration: underline;
+}
+
+.cart-item {
+	display: flex;
+	align-items: center;
+	padding: 1.5rem 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.cart-item:last-child {
+	border-bottom: none;
+}
+
+.item-image {
+	width: 100px;
+	height: 120px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-right: 1.5rem;
+}
+
+.item-details {
+	flex: 1;
+}
+
+.item-name {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+.item-info {
+	color: #666;
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
+}
+
+.item-price {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #333;
+}
+
+.item-actions {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.quantity-selector {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.quantity-btn {
+	background: #f8f9fa;
+	border: none;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2rem;
+}
+
+.quantity-btn:hover {
+	background: #e9ecef;
+}
+
+.quantity-input {
+	border: none;
+	width: 50px;
+	text-align: center;
+	height: 35px;
+	outline: none;
+}
+
+.remove-btn {
+	color: #dc3545;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 0.9rem;
+	text-decoration: underline;
+}
+
+.remove-btn:hover {
+	color: #c82333;
+}
+
+.order-summary {
+	background: white;
+	border-radius: 10px;
+	padding: 2rem;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	height: fit-content;
+}
+
+.order-summary h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	color: #333;
+}
+
+.coupon-section {
+	margin-bottom: 2rem;
+}
+
+.coupon-input {
+	width: 100%;
+	padding: 0.8rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 0.5rem;
+	outline: none;
+}
+
+.coupon-input:focus {
+	border-color: #007bff;
+}
+
+.summary-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+	color: #666;
+}
+
+.summary-total {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #333;
+	padding-top: 1rem;
+	border-top: 1px solid #eee;
+	margin-top: 1rem;
+}
+
+.checkout-btn {
+	width: 100%;
+	background: #333;
+	color: white;
+	border: none;
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	margin-top: 1.5rem;
+	transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+	background: #555;
+}
+
+.order-info {
+	margin-top: 3rem;
+	background: white;
+	border-radius: 10px;
+	padding: 2rem;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.order-info h3 {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+	color: #333;
+}
+
+.info-section {
+	margin-bottom: 1.5rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.info-section:last-child {
+	border-bottom: none;
+}
+
+.info-section h4 {
+	color: #333;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info-section p {
+	color: #666;
+	font-size: 0.9rem;
+	margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+	.cart-container {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		padding: 1rem;
+	}
+
+	.cart-item {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.item-image {
+		width: 100%;
+		max-width: 200px;
+		margin-right: 0;
+	}
+
+	.item-actions {
+		justify-content: space-between;
+		width: 100%;
+	}
+}

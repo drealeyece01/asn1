@@ -1,0 +1,185 @@
+<!--
+**
+Author: Desmond Thompson
+Date:   August 03, 2025
+ID:     R2409D18577488
+Course: LJMU-7505-COMP
+Code:   7505
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiWear - Premium American Fashion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+     <header class="header">
+        <nav class="navbar">
+             <div class="nav-left">
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Men</a>
+                <a href="shop.html" class="nav-link">Women</a>
+                <a href="shop.html" class="nav-link">Kids</a>
+                <a href="shop.html" class="nav-link">Wedding Collection</a>
+                <a href="orders.html" class="nav-link">My Orders</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    <span class="cart-count">3</span>
+                    🛒
+                </div>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-slider">
+                <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1200&h=600&fit=crop" alt="Fashion Hero">
+                <div class="hero-arrows" style="padding-bottom: 20%;">
+                    <button class="arrow-left">‹</button>
+                    <button class="arrow-right">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2>Categories</h2>
+            <p class="section-description">Browse by category to find timeless American fashion—whether it's elegant formal wear, vibrant casuals, or festive outfits. Each piece is crafted to reflect tradition with a modern twist.</p>
+<a href="shop.html" class="shop-all-btn">Shop All</a>
+            
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="images/men.jpg" alt="Men's Fashion">
+                    <h3>Men</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/women.jpg" alt="Women's Fashion">
+                    <h3>Women</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/kids.jpg" alt="Kids Fashion">
+                    <h3>Kids</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Arrivals -->
+    <section class="latest-arrivals">
+        <div class="container">
+            <h2>Our latest arrivals</h2>
+            <p class="section-description">Fresh styles with timeless tradition. Explore what's new this season</p>
+<a href="shop.html" class="shop-all-btn">Shop All</a>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/men-fashion.jpg" alt="Latest Arrival 1">
+                </div>
+                <div class="product-card featured">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300&h=500&fit=crop" alt="Featured Product">
+                </div>
+                <div class="product-card">
+                    <img src="images/kid-style.jpg" alt="Latest Arrival 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Products -->
+    <section class="our-products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p class="section-description">Discover beautifully crafted traditional wear designed for every occasion.</p>
+<a href="shop.html" class="shop-all-btn">Shop All</a>
+            
+            <div class="product-showcase">
+                <div class="product-item">
+                    <img src="images/skirt.jpg" alt="T-Shirts & Polos">
+                    <h3>Piper Denim Skirt</h3>
+                    <p class="price">$99</p>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=250&h=350&fit=crop" alt="T-Shirts & Polos">
+                    <h3>T-Shirts & Polos</h3>
+                    <p class="price">$99</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/sleep-wear.jpg" alt="Lounge & Sleepwear">
+                    <h3>Lounge & Sleepwear</h3>
+                    <p class="price">$99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="newsletter">
+                <h3><i class="fas fa-envelope-open-text"></i> Sign up for our newsletter</h3>
+                <p>Be the first to know about our special offers, news, and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button><i class="fas fa-paper-plane"></i> Sign Up</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><i class="fas fa-store"></i> About DesiWear</h4>
+                    <ul>
+                        <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Info</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Store Location</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-headset"></i> Customer Service</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-ruler"></i> Size Guide</a></li>
+                        <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4><i class="fas fa-users"></i> Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DESIWEAR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
