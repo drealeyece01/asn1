@@ -1,5 +1,5 @@
 /**
-Author: Desmond Thompson
+Author: 
 Date:   August 03, 2025
 ID:     R2409D18577488
 Course: LJMU-7505-COMP
@@ -170,4 +170,5 @@ Code:   7505
                 document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
             });
+
         });
